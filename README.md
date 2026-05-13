@@ -5,9 +5,9 @@
 **Type:** [Research / Copyright / Patent]
 **Roll Numbers & Names:** 
 - 2211981122: Ayush Soni
-- 2211981123: [Member Name]
-- 2211981126: [Member Name]
-- 2211981151: [Member Name]
+- 2211981123: Barsan Bera
+- 2211981126: Bhaskar
+- 2211981151: Dushant
 **Current Status:** Completed
 
 ---
