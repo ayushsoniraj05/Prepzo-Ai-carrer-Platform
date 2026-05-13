@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+.venv/
+env/
+venv/
+ENV/
+build/
+dist/
+.output/
+
+# IDEs and System
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs and diagnostic files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+ai_out.txt
+seed_out.txt
+seed_final.txt
+gemini-out.txt
+out.txt
+out2.txt
+*.pyc
+__pycache__/
+
+# Project-specific temporary/test files (Root)
+debug.html
+final_absolute_response.json
+final_absolute_response_v2.json
+final_fixed_response.json
+final_response.json
+startup.log
+scrape_overleaf.py
+temp_engine.py
+test-ai-generator.js
+test_data.json
+test_recs.py
+test_response.json
+tmp/
+scratch/
+tmp_*.py
+
+# Backend temporary/test files
+backend/check_student.js
+backend/check_student_flags.js
+backend/fix_student.js
+backend/test-ai-gen.js
+backend/test-ai.js
+backend/test-gemini.js
+backend/test_ai_gen.py
+backend/test_login.py
+backend/test_recommendations.py
+backend/test_req.py
+backend/test_req2.py
+backend/test_req3.py
+backend/test_req4.py
+backend/gemini-out.txt
+backend/out.txt
+backend/out2.txt
+
+# Uploads and temporary data
+uploads/*
+!uploads/notes/
+!uploads/notes/**
+backend/uploads/
+/data/
+/ai-service/data/
+ai-service/__pycache__/

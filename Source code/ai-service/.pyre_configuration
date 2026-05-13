@@ -1,0 +1,8 @@
+{
+  "source_directories": [
+    "."
+  ],
+  "search_path": [
+    "c:/ai-career-platform-development/.venv/Lib/site-packages"
+  ]
+}

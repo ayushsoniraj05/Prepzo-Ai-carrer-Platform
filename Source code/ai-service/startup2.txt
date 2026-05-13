@@ -1,0 +1,38 @@
+INFO:     Started server process [20532]
+INFO:     Waiting for application startup.
+2026-03-22 13:03:37 | INFO     | app.main:lifespan:60 - \U0001f680 Starting Prepzo AI Service...
+2026-03-22 13:03:37 | INFO     | app.main:lifespan:66 - \U0001f4e6 Connecting to MongoDB...
+2026-03-22 13:03:38 | INFO     | app.database:connect:29 - \u2705 Connected to MongoDB: prepzo_ai
+2026-03-22 13:03:41 | INFO     | app.database:_ensure_indexes:99 - \U0001f4d1 Database indexes ensured
+2026-03-22 13:03:41 | INFO     | app.main:lifespan:72 - \U0001f524 Loading embedding model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|##########| 103/103 [00:00<00:00, 12477.64it/s]
+[1mBertModel LOAD REPORT[0m from: sentence-transformers/all-MiniLM-L6-v2
+Key                     | Status     |  | 
+------------------------+------------+--+-
+embeddings.position_ids | UNEXPECTED |  | 
+
+[3mNotes:
+- UNEXPECTED[3m	:can be ignored when loading from different task/architecture; not ok if you expect identical arch.[0m
+2026-03-22 13:03:50 | INFO     | app.services.embedding_service:initialize:42 - \u2705 Embedding model loaded: sentence-transformers/all-MiniLM-L6-v2
+2026-03-22 13:03:50 | INFO     | app.services.embedding_service:initialize:43 -    Embedding dimension: 384
+2026-03-22 13:03:50 | INFO     | app.main:lifespan:78 - \U0001f5c4\ufe0f Initializing FAISS vector store...
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: skills
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: courses
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: youtube
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: certifications
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: questions
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: roles
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: study_notes
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: interview_prep
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:_init_index:121 -    Created new index: practice_problems
+2026-03-22 13:03:50 | INFO     | app.services.vector_store:initialize:77 - \u2705 FAISS vector store initialized
+2026-03-22 13:03:50 | INFO     | app.main:lifespan:84 - \U0001f9e0 Connecting to Ollama LLM server...
+2026-03-22 13:03:50 | INFO     | app.services.model_service:initialize:72 - \u2705 Ollama connected - using model: mistral:latest
+2026-03-22 13:03:50 | INFO     | app.main:lifespan:99 - \u2705 Prepzo AI Service started successfully with Ollama!
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-03-22 13:03:59 | INFO     | app.services.question_generator:generate_test:534 - [QuestionGenerator] Generating test for 'Rahul Sharma' | seed=bfc73e38 | role=Backend Developer
+2026-03-22 13:03:59 | INFO     | app.services.question_generator:generate_test:557 -   \u2192 Generating section: DSA
+2026-03-22 13:05:59 | ERROR    | app.services.model_service:generate:182 - Ollama request timed out
+2026-03-22 13:05:59 | WARNING  | app.services.question_generator:_gen_coding:390 - Coding generation failed for DSA/Arrays & Hashing (attempt 1): AI model request timed out. The model may be processing a complex request.

@@ -1,0 +1,10 @@
+{
+  "source_directories": [
+    "c:/ai-career-platform-development",
+    "c:/ai-career-platform-development/ai-service"
+  ],
+  "search_path": [
+    "c:/ai-career-platform-development/ai-service",
+    "c:/ai-career-platform-development/.venv/Lib/site-packages"
+  ]
+}

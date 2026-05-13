@@ -1,0 +1,771 @@
+{
+  "questionsBank": {
+    "metadata": {
+      "totalQuestions": 150,
+      "lastUpdated": "2026-04-21",
+      "categories": ["Technical Skills", "Non-Technical Skills"],
+      "fields": ["Computer Science", "Management", "Finance", "Data Science", "Engineering"]
+    },
+    "technicalSkills": {
+      "DBMS": {
+        "skillName": "Database Management Systems",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "DBMS_001",
+            "question": "What is a database management system (DBMS)?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "A DBMS is software that manages data storage, retrieval, and updates. It provides tools to create, read, update, and delete data while maintaining data integrity and security.",
+            "keywords": ["data management", "storage", "retrieval"]
+          },
+          {
+            "id": "DBMS_002",
+            "question": "What is the difference between ACID and BASE properties?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "ACID (Atomicity, Consistency, Isolation, Durability) ensures strong consistency in traditional databases. BASE (Basically Available, Soft state, Eventually consistent) prioritizes availability and partition tolerance in distributed systems.",
+            "keywords": ["ACID", "BASE", "consistency", "distributed systems"]
+          },
+          {
+            "id": "DBMS_003",
+            "question": "Explain normalization in databases.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. It involves dividing tables into smaller, related tables through normal forms (1NF, 2NF, 3NF, BCNF).",
+            "keywords": ["normalization", "redundancy", "data integrity", "normal forms"]
+          },
+          {
+            "id": "DBMS_004",
+            "question": "What is a primary key and what is its purpose?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "A primary key is a column or set of columns that uniquely identifies each record in a table. It ensures data uniqueness and serves as a reference point for relationships between tables.",
+            "keywords": ["primary key", "unique", "identifier"]
+          },
+          {
+            "id": "DBMS_005",
+            "question": "What are indexes in databases and why are they important?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Indexes are data structures that speed up data retrieval by creating a sorted pointer to rows. They improve query performance but slow down write operations and consume additional storage.",
+            "keywords": ["indexes", "performance", "query optimization"]
+          },
+          {
+            "id": "DBMS_006",
+            "question": "Explain the difference between SQL and NoSQL databases.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "SQL databases use structured schemas with relational models and ACID compliance. NoSQL databases are flexible, schema-less, and designed for horizontal scaling with eventual consistency.",
+            "keywords": ["SQL", "NoSQL", "schema", "ACID", "scalability"]
+          },
+          {
+            "id": "DBMS_007",
+            "question": "What is a foreign key?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "A foreign key is a column that creates a link to another table's primary key. It enforces referential integrity and maintains relationships between tables.",
+            "keywords": ["foreign key", "referential integrity", "relationship"]
+          },
+          {
+            "id": "DBMS_008",
+            "question": "What are transactions in databases?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Transactions are sequences of operations treated as a single unit. They follow ACID properties to ensure data consistency even if failures occur during execution.",
+            "keywords": ["transactions", "ACID", "consistency"]
+          }
+        ]
+      },
+      "DataStructures": {
+        "skillName": "Data Structures",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "DS_001",
+            "question": "What are the main differences between arrays and linked lists?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Arrays have fixed size with O(1) access time but O(n) insertion/deletion. Linked lists have dynamic size with O(n) access time but O(1) insertion/deletion if position is known.",
+            "keywords": ["arrays", "linked lists", "time complexity"]
+          },
+          {
+            "id": "DS_002",
+            "question": "Explain the concept of binary search trees (BST).",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "A BST is a binary tree where left child is smaller and right child is larger than parent. It enables O(log n) search, insertion, and deletion in balanced cases.",
+            "keywords": ["binary search trees", "balanced", "O(log n)"]
+          },
+          {
+            "id": "DS_003",
+            "question": "What is a hash table and how does it handle collisions?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "A hash table uses a hash function to map keys to array indices. Collisions are handled using chaining (linked lists) or open addressing (linear/quadratic probing).",
+            "keywords": ["hash table", "hash function", "collisions", "chaining"]
+          },
+          {
+            "id": "DS_004",
+            "question": "Describe a stack and provide real-world applications.",
+            "difficulty": "Beginner",
+            "expectedAnswer": "A stack is a LIFO (Last In First Out) data structure. Applications include function call stack, undo/redo operations, expression evaluation, and backtracking algorithms.",
+            "keywords": ["stack", "LIFO", "applications"]
+          },
+          {
+            "id": "DS_005",
+            "question": "What is the difference between a queue and a priority queue?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "A queue is FIFO with elements dequeued in order. A priority queue dequeues elements based on priority, implemented using heaps for O(log n) operations.",
+            "keywords": ["queue", "priority queue", "FIFO", "heap"]
+          },
+          {
+            "id": "DS_006",
+            "question": "Explain graph representations: adjacency matrix vs adjacency list.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Adjacency matrix uses O(V²) space with O(1) edge lookup. Adjacency list uses O(V+E) space and is better for sparse graphs. Choice depends on graph density.",
+            "keywords": ["graphs", "adjacency matrix", "adjacency list", "space complexity"]
+          },
+          {
+            "id": "DS_007",
+            "question": "What is a heap and what are min-heap and max-heap?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "A heap is a complete binary tree. Min-heap has parent ≤ children (smallest at root). Max-heap has parent ≥ children (largest at root). Used for priority queues and sorting.",
+            "keywords": ["heap", "min-heap", "max-heap", "priority queue"]
+          },
+          {
+            "id": "DS_008",
+            "question": "Explain the concept of a trie data structure.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "A trie stores strings in a tree format where each node represents a character. It enables O(m) search/insertion where m is string length, useful for autocomplete and spell checking.",
+            "keywords": ["trie", "prefix tree", "string operations"]
+          }
+        ]
+      },
+      "Algorithms": {
+        "skillName": "Algorithms & Complexity Analysis",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "ALG_001",
+            "question": "What is Big O notation and why is it important?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Big O describes the worst-case time complexity of an algorithm relative to input size. It helps compare algorithm efficiency and predict scalability.",
+            "keywords": ["Big O", "time complexity", "scalability"]
+          },
+          {
+            "id": "ALG_002",
+            "question": "Explain the quicksort algorithm and its average time complexity.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Quicksort divides array using a pivot, recursively sorting partitions. Average: O(n log n), Worst: O(n²) when pivot is always smallest/largest. It's in-place with O(log n) space.",
+            "keywords": ["quicksort", "pivot", "O(n log n)", "divide and conquer"]
+          },
+          {
+            "id": "ALG_003",
+            "question": "What is dynamic programming? Give an example.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "DP solves complex problems by breaking them into overlapping subproblems and storing results. Example: Fibonacci sequence where F(n) = F(n-1) + F(n-2), avoiding recalculation.",
+            "keywords": ["dynamic programming", "memoization", "subproblems"]
+          },
+          {
+            "id": "ALG_004",
+            "question": "Explain breadth-first search (BFS) and its applications.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "BFS explores level by level using a queue. Time: O(V+E), Space: O(V). Applications: shortest path in unweighted graphs, web crawling, social network connections.",
+            "keywords": ["BFS", "queue", "level-by-level", "shortest path"]
+          },
+          {
+            "id": "ALG_005",
+            "question": "What is depth-first search (DFS) and when to use it?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "DFS explores as far as possible using a stack/recursion. Time: O(V+E), Space: O(h). Use for: topological sorting, cycle detection, maze solving.",
+            "keywords": ["DFS", "stack", "recursion", "topological sort"]
+          },
+          {
+            "id": "ALG_006",
+            "question": "Explain Dijkstra's algorithm for shortest paths.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Dijkstra finds shortest path from source to all vertices with non-negative edges. Time: O((V+E) log V) with min-heap. Uses greedy approach, repeatedly selecting minimum distance vertex.",
+            "keywords": ["Dijkstra", "shortest path", "greedy", "weighted graphs"]
+          },
+          {
+            "id": "ALG_007",
+            "question": "What is a greedy algorithm? Provide examples.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Greedy algorithms make locally optimal choices hoping for global optimum. Examples: activity selection, Huffman coding, Dijkstra. Not always optimal but efficient.",
+            "keywords": ["greedy", "locally optimal", "activity selection"]
+          },
+          {
+            "id": "ALG_008",
+            "question": "Explain merge sort and why it's stable.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Merge sort divides array in half, recursively sorts, then merges. Time: O(n log n) always, Space: O(n). Stable because merge preserves relative order of equal elements.",
+            "keywords": ["merge sort", "O(n log n)", "stable", "divide and conquer"]
+          }
+        ]
+      },
+      "JavaProgramming": {
+        "skillName": "Java Programming",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "JAVA_001",
+            "question": "What are the key features of Java?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Platform independence (write once, run anywhere), object-oriented, automatic memory management (garbage collection), strong typing, extensive library, and exception handling.",
+            "keywords": ["Java features", "JVM", "object-oriented", "garbage collection"]
+          },
+          {
+            "id": "JAVA_002",
+            "question": "Explain the difference between JDK, JRE, and JVM.",
+            "difficulty": "Beginner",
+            "expectedAnswer": "JVM executes Java bytecode. JRE provides runtime environment with JVM + libraries. JDK includes JRE + development tools (compiler, debugger, etc.).",
+            "keywords": ["JDK", "JRE", "JVM", "Java development"]
+          },
+          {
+            "id": "JAVA_003",
+            "question": "What is the difference between checked and unchecked exceptions?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Checked exceptions (IOException, SQLException) must be caught or declared. Unchecked exceptions (NullPointerException, ArrayIndexOutOfBoundsException) extend RuntimeException and don't require declaration.",
+            "keywords": ["exceptions", "checked", "unchecked", "error handling"]
+          },
+          {
+            "id": "JAVA_004",
+            "question": "Explain encapsulation and its benefits.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Encapsulation hides internal details using private members and public getters/setters. Benefits: data hiding, security, flexibility to change implementation, easier maintenance.",
+            "keywords": ["encapsulation", "private", "public", "getters", "setters"]
+          },
+          {
+            "id": "JAVA_005",
+            "question": "What is inheritance and what are its types?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Inheritance allows a class to inherit properties from another. Single: one parent, Multilevel: chain of inheritance, Hierarchical: multiple children from one parent. Java doesn't support multiple inheritance directly.",
+            "keywords": ["inheritance", "parent", "child", "extends"]
+          },
+          {
+            "id": "JAVA_006",
+            "question": "Explain polymorphism with examples.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Polymorphism: same interface, different implementations. Compile-time (method overloading): same method name, different parameters. Runtime (method overriding): subclass overrides parent method.",
+            "keywords": ["polymorphism", "overloading", "overriding", "interfaces"]
+          },
+          {
+            "id": "JAVA_007",
+            "question": "What is the difference between abstract class and interface?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Abstract class can have concrete methods and state variables. Interface only has abstract methods and constants. A class extends one abstract class but implements multiple interfaces.",
+            "keywords": ["abstract class", "interface", "abstraction"]
+          },
+          {
+            "id": "JAVA_008",
+            "question": "Explain the concept of Collections Framework in Java.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Collections Framework provides interfaces (List, Set, Map) and implementations (ArrayList, HashMap, TreeSet). It offers standard data structures with consistent methods for manipulation and iteration.",
+            "keywords": ["Collections", "List", "Set", "Map", "ArrayList", "HashMap"]
+          }
+        ]
+      },
+      "WebDevelopment": {
+        "skillName": "Web Development",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "WEB_001",
+            "question": "What is the difference between HTML, CSS, and JavaScript?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "HTML provides structure and content. CSS handles styling and layout. JavaScript adds interactivity and dynamic behavior. Together they create complete web applications.",
+            "keywords": ["HTML", "CSS", "JavaScript", "web development"]
+          },
+          {
+            "id": "WEB_002",
+            "question": "Explain the concept of responsive web design.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Responsive design adapts layouts to different screen sizes using flexible grids, media queries, and flexible images. Goal: optimal viewing experience across devices.",
+            "keywords": ["responsive design", "media queries", "flexible layout", "mobile-first"]
+          },
+          {
+            "id": "WEB_003",
+            "question": "What is the DOM and how does JavaScript interact with it?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "DOM (Document Object Model) represents HTML as a tree of objects. JavaScript accesses and manipulates DOM elements using methods like getElementById(), querySelector(), and properties.",
+            "keywords": ["DOM", "Document Object Model", "manipulation", "selectors"]
+          },
+          {
+            "id": "WEB_004",
+            "question": "Explain the event bubbling and event capturing in JavaScript.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Event capturing flows from parent to child (top-down). Event bubbling flows from child to parent (bottom-up). preventDefault() stops default action, stopPropagation() stops bubbling.",
+            "keywords": ["event bubbling", "event capturing", "event propagation"]
+          },
+          {
+            "id": "WEB_005",
+            "question": "What is the difference between async and defer attributes in script tags?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Async downloads script in parallel and executes immediately (doesn't guarantee order). Defer downloads in parallel but executes after HTML parsing (maintains order). Synchronous blocks parsing.",
+            "keywords": ["async", "defer", "script loading", "performance"]
+          },
+          {
+            "id": "WEB_006",
+            "question": "Explain cookies, sessionStorage, and localStorage.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Cookies: small files sent with requests, expire at set time. SessionStorage: exists only during session, cleared on close. LocalStorage: persistent until manually cleared. Storage: client-side only.",
+            "keywords": ["cookies", "sessionStorage", "localStorage", "storage"]
+          },
+          {
+            "id": "WEB_007",
+            "question": "What is CORS (Cross-Origin Resource Sharing) and why is it important?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "CORS is a security feature restricting cross-origin requests. Preflight requests check permissions. Headers: Access-Control-Allow-Origin, Access-Control-Allow-Methods. Essential for APIs and security.",
+            "keywords": ["CORS", "cross-origin", "security", "preflight"]
+          },
+          {
+            "id": "WEB_008",
+            "question": "Explain what is a REST API and its key principles.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "REST uses HTTP methods (GET, POST, PUT, DELETE) on resources with unique URLs. Stateless, cacheable, uniform interface. Returns JSON/XML. Based on client-server architecture.",
+            "keywords": ["REST API", "HTTP methods", "resources", "stateless"]
+          }
+        ]
+      },
+      "PythonProgramming": {
+        "skillName": "Python Programming",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "PYTHON_001",
+            "question": "What are the key features of Python?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Easy to learn syntax, dynamically typed, interpreted, supports multiple programming paradigms (OOP, functional), extensive libraries, strong community support.",
+            "keywords": ["Python features", "interpreted", "dynamic typing"]
+          },
+          {
+            "id": "PYTHON_002",
+            "question": "Explain the difference between list and tuple in Python.",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Lists are mutable (can be changed) and use square brackets. Tuples are immutable and use parentheses. Tuples are hashable and faster, better for dictionary keys.",
+            "keywords": ["list", "tuple", "mutable", "immutable"]
+          },
+          {
+            "id": "PYTHON_003",
+            "question": "What is list comprehension and provide an example.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "List comprehension creates lists concisely. Example: [x*2 for x in range(5)] produces [0, 2, 4, 6, 8]. More readable and faster than loops.",
+            "keywords": ["list comprehension", "syntactic sugar", "readable"]
+          },
+          {
+            "id": "PYTHON_004",
+            "question": "Explain decorators in Python.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Decorators modify function behavior without changing its code. Syntax: @decorator. Used for logging, authentication, timing. Implemented as functions that wrap other functions.",
+            "keywords": ["decorators", "function wrapping", "metaprogramming"]
+          },
+          {
+            "id": "PYTHON_005",
+            "question": "What is the difference between *args and **kwargs?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "*args allows variable positional arguments (tuple). **kwargs allows variable keyword arguments (dictionary). Used for flexible function signatures.",
+            "keywords": ["*args", "**kwargs", "variable arguments", "flexibility"]
+          },
+          {
+            "id": "PYTHON_006",
+            "question": "Explain generators and yield in Python.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Generators produce values on-the-fly using yield, saving memory. They're lazy evaluators, returning one value at a time. Used in iterations and large data processing.",
+            "keywords": ["generators", "yield", "lazy evaluation", "memory efficiency"]
+          },
+          {
+            "id": "PYTHON_007",
+            "question": "What is lambda function in Python?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Lambda creates anonymous functions. Syntax: lambda x: x*2. Used in functional programming with map(), filter(), sorted(). Useful for short, simple operations.",
+            "keywords": ["lambda", "anonymous functions", "functional programming"]
+          },
+          {
+            "id": "PYTHON_008",
+            "question": "Explain the GIL (Global Interpreter Lock) in Python.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "GIL prevents multiple native threads from executing Python bytecode simultaneously. Only one thread executes at a time. Doesn't affect multiprocessing. Important for CPU-bound vs I/O-bound tasks.",
+            "keywords": ["GIL", "threading", "multiprocessing", "concurrency"]
+          }
+        ]
+      }
+    },
+    "nonTechnicalSkills": {
+      "Communication": {
+        "skillName": "Communication Skills",
+        "difficulty": ["Beginner", "Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "COMM_001",
+            "question": "How do you communicate technical concepts to non-technical stakeholders?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Use simple language, avoid jargon, provide analogies, use visuals/diagrams, focus on impact/value, ask for feedback, be patient and clear. Tailor message to audience.",
+            "keywords": ["stakeholder communication", "simplification", "clarity"]
+          },
+          {
+            "id": "COMM_002",
+            "question": "Describe your experience presenting to large audiences.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Share experience, preparation strategy, how you handle nervousness, engagement techniques (questions, eye contact), adapting to audience reactions, feedback received.",
+            "keywords": ["presentation", "public speaking", "audience engagement"]
+          },
+          {
+            "id": "COMM_003",
+            "question": "How do you handle difficult conversations or conflicts?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Active listening, empathy, understanding other perspectives, staying calm, finding common ground, proposing solutions, follow-up to ensure resolution.",
+            "keywords": ["conflict resolution", "empathy", "problem-solving"]
+          },
+          {
+            "id": "COMM_004",
+            "question": "What is active listening and why is it important?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Active listening involves full attention, understanding, reflecting, confirming. Important for: building trust, avoiding misunderstandings, better problem-solving, showing respect.",
+            "keywords": ["active listening", "attention", "understanding", "trust"]
+          },
+          {
+            "id": "COMM_005",
+            "question": "How do you provide and receive feedback constructively?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Give specific, actionable feedback with examples. Focus on behavior, not person. Use sandwich method (positive-critical-positive). Receive feedback openly, ask clarifications, show appreciation.",
+            "keywords": ["feedback", "constructive criticism", "growth mindset"]
+          },
+          {
+            "id": "COMM_006",
+            "question": "Describe how you adapt communication style for different audiences.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Assess audience knowledge level, preferences, context. Adjust vocabulary, examples, pace, format (verbal/written). Show cultural sensitivity, use appropriate channel.",
+            "keywords": ["communication adaptation", "audience analysis", "flexibility"]
+          },
+          {
+            "id": "COMM_007",
+            "question": "How do you handle miscommunication in a team?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Acknowledge misunderstanding, clarify assumptions, communicate clearly, document decisions, follow up, prevent through better processes, apologize if necessary.",
+            "keywords": ["miscommunication", "clarification", "team dynamics"]
+          },
+          {
+            "id": "COMM_008",
+            "question": "Explain your approach to written communication (emails, documentation).",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Clear subject lines, organized structure, concise paragraphs, actionable items, professional tone, proofread, appropriate formality level, consider audience and context.",
+            "keywords": ["written communication", "documentation", "professionalism"]
+          }
+        ]
+      },
+      "Leadership": {
+        "skillName": "Leadership Skills",
+        "difficulty": ["Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "LEAD_001",
+            "question": "How do you define leadership and what qualities does a good leader possess?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Leadership: guiding, inspiring, influencing others. Qualities: vision, integrity, accountability, emotional intelligence, decisiveness, adaptability, empowerment, communication.",
+            "keywords": ["leadership", "qualities", "influence"]
+          },
+          {
+            "id": "LEAD_002",
+            "question": "Describe your leadership style and how it evolved.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Share personal style (directive/supportive/participative), examples demonstrating it, how feedback/experience shaped it, flexibility for different situations.",
+            "keywords": ["leadership style", "development", "adaptability"]
+          },
+          {
+            "id": "LEAD_003",
+            "question": "How do you motivate team members with different needs and goals?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Understand individual motivations, set clear goals, provide recognition, create growth opportunities, delegate authority, lead by example, provide support and feedback.",
+            "keywords": ["motivation", "individual differences", "engagement"]
+          },
+          {
+            "id": "LEAD_004",
+            "question": "Give an example of when you had to make a difficult decision.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Use STAR method: situation, task, action, result. Show analysis, consideration of consequences, stakeholder input, decision rationale, outcome learned.",
+            "keywords": ["decision-making", "difficult situations", "accountability"]
+          },
+          {
+            "id": "LEAD_005",
+            "question": "How do you handle underperforming team members?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Understand reasons (skills, motivation, personal), provide support/training, set clear expectations, document progress, performance plan if needed, acknowledge improvements.",
+            "keywords": ["performance management", "development", "accountability"]
+          },
+          {
+            "id": "LEAD_006",
+            "question": "How do you build trust within a team?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Be transparent, keep promises, admit mistakes, listen actively, support team, consistent behavior, encourage psychological safety, give credit, protect team interests.",
+            "keywords": ["trust", "transparency", "team dynamics"]
+          },
+          {
+            "id": "LEAD_007",
+            "question": "Describe a time you led a team through change.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Use STAR method. Show: change communication, resistance management, team support, solution-orientation, perseverance, learning from experience.",
+            "keywords": ["change management", "leadership", "resilience"]
+          },
+          {
+            "id": "LEAD_008",
+            "question": "How do you handle criticism or failure as a leader?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Accept responsibility, analyze what went wrong, apologize if needed, develop improvement plan, communicate learnings, move forward, show resilience.",
+            "keywords": ["accountability", "resilience", "growth mindset"]
+          }
+        ]
+      },
+      "TimeManagement": {
+        "skillName": "Time Management & Productivity",
+        "difficulty": ["Beginner", "Intermediate"],
+        "questions": [
+          {
+            "id": "TIME_001",
+            "question": "How do you prioritize tasks when everything seems urgent?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Use urgency-importance matrix, assess true deadlines, communicate with stakeholders, focus on high-impact tasks, break large tasks, adjust as needed.",
+            "keywords": ["prioritization", "urgency", "importance", "matrix"]
+          },
+          {
+            "id": "TIME_002",
+            "question": "What productivity methods or tools do you use?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Methods: Pomodoro, GTD, time blocking. Tools: calendars, to-do apps, note-taking. Share how you adapted them, results achieved, consistency importance.",
+            "keywords": ["productivity", "methods", "tools", "efficiency"]
+          },
+          {
+            "id": "TIME_003",
+            "question": "How do you handle interruptions and distractions?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Set boundaries (blocks, do-not-disturb), minimize distractions, communicate availability, batch similar tasks, take planned breaks, assess interruption importance.",
+            "keywords": ["focus", "distractions", "boundaries", "deep work"]
+          },
+          {
+            "id": "TIME_004",
+            "question": "Describe how you balance multiple projects simultaneously.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Set clear goals, track progress, communicate timelines, delegate when possible, use project management tools, maintain quality, regular reassessment.",
+            "keywords": ["multitasking", "project management", "organization"]
+          },
+          {
+            "id": "TIME_005",
+            "question": "How do you manage procrastination?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Identify reasons, break into smaller tasks, set deadlines, use accountability, reward progress, manage perfectionism, start with easiest part.",
+            "keywords": ["procrastination", "motivation", "self-discipline"]
+          },
+          {
+            "id": "TIME_006",
+            "question": "What is your approach to deadline management?",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Start early, build in buffer time, communicate clearly, track progress, address risks early, adjust resources, deliver on time with quality.",
+            "keywords": ["deadlines", "planning", "delivery", "quality"]
+          }
+        ]
+      },
+      "Teamwork": {
+        "skillName": "Teamwork & Collaboration",
+        "difficulty": ["Beginner", "Intermediate"],
+        "questions": [
+          {
+            "id": "TEAM_001",
+            "question": "Describe your role in a successful team project.",
+            "difficulty": "Beginner",
+            "expectedAnswer": "Share contribution, collaboration with teammates, challenges faced, solutions provided, outcome, learnings, what you'd do differently.",
+            "keywords": ["teamwork", "contribution", "collaboration"]
+          },
+          {
+            "id": "TEAM_002",
+            "question": "How do you contribute to a positive team culture?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Support colleagues, share knowledge, celebrate wins, communicate positively, respect differences, volunteer for tasks, encourage innovation.",
+            "keywords": ["culture", "positivity", "support", "inclusivity"]
+          },
+          {
+            "id": "TEAM_003",
+            "question": "Give an example of when you had to work with someone difficult.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Use STAR method. Show: understanding, patience, compromise, professional behavior, resolution outcome, relationship improvement.",
+            "keywords": ["difficult people", "conflict", "professionalism", "problem-solving"]
+          },
+          {
+            "id": "TEAM_004",
+            "question": "How do you handle disagreements with team members?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Listen to perspective, explain your view, find common ground, focus on shared goals, be willing to change mind, escalate if needed.",
+            "keywords": ["disagreements", "perspective", "resolution", "flexibility"]
+          },
+          {
+            "id": "TEAM_005",
+            "question": "How do you support team members in achieving their goals?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Share knowledge, provide feedback, offer assistance, celebrate progress, listen to concerns, suggest opportunities, show genuine interest.",
+            "keywords": ["support", "mentoring", "development", "collaboration"]
+          },
+          {
+            "id": "TEAM_006",
+            "question": "Describe your experience with remote or distributed teams.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Communication tools used, challenges faced, how you overcame them, maintaining connection, asynchronous work strategies, time zone management.",
+            "keywords": ["remote work", "distributed teams", "communication", "collaboration"]
+          }
+        ]
+      },
+      "ProblemSolving": {
+        "skillName": "Problem-Solving & Critical Thinking",
+        "difficulty": ["Intermediate", "Advanced"],
+        "questions": [
+          {
+            "id": "PS_001",
+            "question": "Describe your approach to solving complex problems.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Define problem clearly, break into components, gather information, brainstorm solutions, evaluate pros/cons, test approach, iterate, document learning.",
+            "keywords": ["problem-solving", "analytical", "systematic"]
+          },
+          {
+            "id": "PS_002",
+            "question": "Give an example of a problem you identified and solved proactively.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Use STAR method. Show: observation, initiative, analysis, solution development, implementation, impact, feedback.",
+            "keywords": ["proactive", "initiative", "impact"]
+          },
+          {
+            "id": "PS_003",
+            "question": "How do you approach problems where you don't have all the information?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Ask clarifying questions, research, make reasonable assumptions, consult experts, gather data incrementally, adjust as you learn more.",
+            "keywords": ["uncertainty", "questions", "learning", "adaptation"]
+          },
+          {
+            "id": "PS_004",
+            "question": "Describe a situation where your solution didn't work as expected.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Use STAR method. Show: recognition, investigation, adjustment, communication, outcome, learnings, how you'll apply lessons.",
+            "keywords": ["failure", "learning", "resilience", "adaptation"]
+          },
+          {
+            "id": "PS_005",
+            "question": "How do you think creatively to find innovative solutions?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Brainstorm without judgment, research industry practices, collaborate with others, challenge assumptions, experiment, learn from failures.",
+            "keywords": ["creativity", "innovation", "thinking outside the box"]
+          },
+          {
+            "id": "PS_006",
+            "question": "How do you validate that your solution actually solves the problem?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Define success criteria upfront, test with users/stakeholders, gather feedback, measure results, monitor over time, iterate.",
+            "keywords": ["validation", "feedback", "measurement", "iteration"]
+          }
+        ]
+      }
+    },
+    "fieldSpecific": {
+      "ComputerScience": {
+        "fieldName": "Computer Science",
+        "technologies": ["Data Structures", "Algorithms", "DBMS", "Web Development", "Java", "Python"],
+        "questions": [
+          {
+            "id": "CS_001",
+            "question": "Explain the concept of software design patterns.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Design patterns are reusable solutions to common problems. Categories: Creational (Singleton, Factory), Structural (Adapter, Decorator), Behavioral (Observer, Strategy). They improve code maintainability.",
+            "keywords": ["design patterns", "reusability", "architecture"]
+          },
+          {
+            "id": "CS_002",
+            "question": "What is version control and why is it essential in software development?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Version control tracks code changes, enables collaboration, allows rollback. Systems: Git, SVN. Benefits: history, branching, conflict resolution, team coordination.",
+            "keywords": ["version control", "Git", "collaboration", "history"]
+          },
+          {
+            "id": "CS_003",
+            "question": "Explain the concept of continuous integration and continuous deployment (CI/CD).",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "CI: automated testing and building on code changes. CD: automated deployment to production. Benefits: faster feedback, fewer bugs, continuous value delivery. Tools: Jenkins, GitLab CI, GitHub Actions.",
+            "keywords": ["CI/CD", "automation", "deployment", "testing"]
+          },
+          {
+            "id": "CS_004",
+            "question": "What is object-oriented programming and its principles?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "OOP: programming around objects with data and methods. Principles: Encapsulation (data hiding), Inheritance (code reuse), Polymorphism (multiple forms), Abstraction (simplification).",
+            "keywords": ["OOP", "encapsulation", "inheritance", "polymorphism"]
+          }
+        ]
+      },
+      "Management": {
+        "fieldName": "Management",
+        "skills": ["Leadership", "Communication", "TeamWork", "Problem-Solving", "Time Management"],
+        "questions": [
+          {
+            "id": "MGT_001",
+            "question": "How do you measure team performance and productivity?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Set clear KPIs, track deliverables, measure quality, gather feedback, 360 reviews, productivity metrics, alignment to goals, celebrate achievements.",
+            "keywords": ["performance metrics", "KPIs", "accountability", "achievement"]
+          },
+          {
+            "id": "MGT_002",
+            "question": "Describe your approach to strategic planning.",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Assess current state, define vision/goals, identify initiatives, allocate resources, create timeline, communicate strategy, monitor progress, adjust as needed.",
+            "keywords": ["strategic planning", "vision", "goals", "execution"]
+          },
+          {
+            "id": "MGT_003",
+            "question": "How do you develop and retain top talent?",
+            "difficulty": "Advanced",
+            "expectedAnswer": "Identify potential, provide growth opportunities, mentoring, competitive compensation, recognition, clear career paths, continuous learning, challenging projects.",
+            "keywords": ["talent development", "retention", "growth", "engagement"]
+          }
+        ]
+      },
+      "Finance": {
+        "fieldName": "Finance",
+        "skills": ["Financial Analysis", "Data Interpretation", "Risk Management", "Communication"],
+        "questions": [
+          {
+            "id": "FIN_001",
+            "question": "Explain the difference between profit and cash flow.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Profit: revenues minus expenses (income statement). Cash flow: actual cash in/out (cash flow statement). Company can be profitable but cash-negative due to timing, inventory.",
+            "keywords": ["profit", "cash flow", "financial statements"]
+          },
+          {
+            "id": "FIN_002",
+            "question": "What are financial ratios and how do you use them for analysis?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Ratios: Liquidity (current, quick), Profitability (ROI, margin), Solvency (debt-to-equity), Efficiency (asset turnover). Used for company health assessment, comparison, trend analysis.",
+            "keywords": ["financial ratios", "analysis", "performance", "health"]
+          },
+          {
+            "id": "FIN_003",
+            "question": "Explain the concept of time value of money.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Money today is worth more than tomorrow due to earning potential. Used in: NPV, discounting, investment decisions. Formula: FV = PV(1+r)^n.",
+            "keywords": ["time value", "NPV", "discount rate", "investment"]
+          }
+        ]
+      },
+      "DataScience": {
+        "fieldName": "Data Science",
+        "skills": ["Statistics", "Machine Learning", "Data Analysis", "Python", "SQL", "Data Visualization"],
+        "questions": [
+          {
+            "id": "DS_001",
+            "question": "Explain the difference between supervised and unsupervised learning.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Supervised: labeled data, predict outputs. Examples: regression, classification. Unsupervised: unlabeled data, find patterns. Examples: clustering, dimensionality reduction.",
+            "keywords": ["machine learning", "supervised", "unsupervised", "algorithms"]
+          },
+          {
+            "id": "DS_002",
+            "question": "What is overfitting and how do you prevent it?",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Overfitting: model performs well on training data but poorly on new data. Prevention: use more data, regularization, cross-validation, simpler models, feature selection.",
+            "keywords": ["overfitting", "generalization", "validation", "regularization"]
+          },
+          {
+            "id": "DS_003",
+            "question": "Explain cross-validation and its importance.",
+            "difficulty": "Intermediate",
+            "expectedAnswer": "Cross-validation: split data into folds, train and test multiple times, average results. Importance: reliable performance estimate, prevents overfitting, better model assessment.",
+            "keywords": ["cross-validation", "k-fold", "model evaluation", "robustness"]
+          }
+        ]
+      }
+    }
+  }
+}
